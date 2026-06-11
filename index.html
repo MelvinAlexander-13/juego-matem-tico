@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Tres en Raya Pro - Juego PWA con inteligencia artificial y niveles de dificultad.">
+
+    <meta
+        name="theme-color"
+        content="#3b82f6">
+
+    <title>
+
+        Tres en Raya Pro
+
+    </title>
+
+    <link
+        rel="manifest"
+        href="manifest.json">
+
+    <link
+        rel="icon"
+        href="img/icon-192.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="img/icon-192.png">
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css">
+
+    <link
+        rel="stylesheet"
+        href="css/layout.css">
+
+    <link
+        rel="stylesheet"
+        href="css/game.css">
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="header">
+
+            <img
+                src="img/logo.png"
+                alt="Logo Tres en Raya">
+
+            <h1>
+
+                Tres en Raya Pro
+
+            </h1>
+
+        </header>
+
+        <section class="scoreboard">
+
+            <div class="score">
+
+                <span>Jugador (X)</span>
+
+                <strong id="scoreX">
+
+                    0
+
+                </strong>
+
+            </div>
+
+            <div class="score">
+
+                <span>Empates</span>
+
+                <strong id="scoreDraw">
+
+                    0
+
+                </strong>
+
+            </div>
+
+            <div class="score">
+
+                <span>Computadora (O)</span>
+
+                <strong id="scoreO">
+
+                    0
+
+                </strong>
+
+            </div>
+
+        </section>
+
+        <section class="difficulty">
+
+            <label for="difficulty">
+
+                Nivel:
+
+            </label>
+
+            <select id="difficulty">
+
+                <option value="easy">
+
+                    Fácil
+
+                </option>
+
+                <option value="medium">
+
+                    Medio
+
+                </option>
+
+                <option value="hard">
+
+                    Difícil
+
+                </option>
+
+            </select>
+
+        </section>
+
+        <section class="status">
+
+            <h2 id="turnText">
+
+                Turno de X
+
+            </h2>
+
+        </section>
+
+        <section
+            id="board"
+            class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+        <section class="actions">
+
+            <button id="restartBtn">
+
+                Nueva Partida
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL DE VICTORIA -->
+
+    <div
+        id="winnerModal"
+        class="modal">
+
+        <div class="modal-content">
+
+            <div id="winnerIcon">
+
+                🏆
+
+            </div>
+
+            <h2 id="winnerTitle">
+
+                ¡Felicidades!
+
+            </h2>
+
+            <p id="winnerMessage">
+
+                Has ganado la partida.
+
+            </p>
+
+            <button id="playAgainBtn">
+
+                Jugar otra vez
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="guardar.js"></script>
+    <script src="board.js"></script>
+    <script src="ui.js"></script>
+    <script src="ia.js"></script>
+    <script src="game.js"></script>
+    <script src="sw-register.js"></script>
+
+</body>
+
+</html>

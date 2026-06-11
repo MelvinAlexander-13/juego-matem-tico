@@ -1,0 +1,224 @@
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width:768px){
+
+    .app{
+
+        padding:25px;
+    }
+
+    .header h1{
+
+        font-size:2.2rem;
+    }
+
+    .board{
+
+        grid-template-columns:
+            repeat(3,100px);
+
+        gap:12px;
+    }
+
+    .cell{
+
+        width:100px;
+
+        height:100px;
+
+        font-size:3.2rem;
+    }
+
+    .score strong{
+
+        font-size:1.7rem;
+    }
+
+    #winnerIcon{
+
+        font-size:4rem;
+    }
+}
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media (max-width:600px){
+
+    body{
+
+        padding:10px;
+    }
+
+    .app{
+
+        width:100%;
+
+        padding:18px;
+    }
+
+    .header img{
+
+        width:80px;
+    }
+
+    .header h1{
+
+        font-size:1.8rem;
+    }
+
+    .scoreboard{
+
+        gap:8px;
+    }
+
+    .score{
+
+        padding:10px;
+    }
+
+    .score span{
+
+        font-size:.85rem;
+    }
+
+    .score strong{
+
+        font-size:1.4rem;
+    }
+
+    .difficulty{
+
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+    .difficulty select{
+
+        width:100%;
+    }
+
+    .status h2{
+
+        font-size:1.2rem;
+    }
+
+    .board{
+
+        grid-template-columns:
+            repeat(3,90px);
+
+        gap:10px;
+    }
+
+    .cell{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:2.8rem;
+    }
+
+    #restartBtn{
+
+        padding:14px;
+
+        font-size:.95rem;
+    }
+
+    .modal-content{
+
+        padding:20px;
+    }
+
+    #winnerIcon{
+
+        font-size:4rem;
+    }
+
+    #winnerTitle{
+
+        font-size:1.5rem;
+    }
+}
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .header img{
+
+        width:70px;
+    }
+
+    .header h1{
+
+        font-size:1.5rem;
+    }
+
+    .status h2{
+
+        font-size:1rem;
+    }
+
+    .board{
+
+        grid-template-columns:
+            repeat(3,75px);
+
+        gap:8px;
+    }
+
+    .cell{
+
+        width:75px;
+
+        height:75px;
+
+        font-size:2.2rem;
+    }
+
+    .score span{
+
+        font-size:.75rem;
+    }
+
+    .score strong{
+
+        font-size:1.2rem;
+    }
+
+    .modal-content{
+
+        width:95%;
+    }
+
+    #winnerIcon{
+
+        font-size:3.5rem;
+    }
+}
+
+/* ==========================
+   PWA INSTALADA
+========================== */
+
+@media (display-mode:standalone){
+
+    .app{
+
+        min-height:95vh;
+    }
+
+    .board{
+
+        margin-top:10px;
+    }
+}

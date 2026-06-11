@@ -1,0 +1,47 @@
+{
+    "name": "Tres en Raya Pro",
+
+    "short_name": "TresEnRaya",
+
+    "description": "Juego de Tres en Raya con inteligencia artificial y tres niveles de dificultad.",
+
+    "lang": "es",
+
+    "start_url": "/",
+
+    "scope": "/",
+
+    "display": "standalone",
+
+    "orientation": "portrait",
+
+    "background_color": "#020617",
+
+    "theme_color": "#3b82f6",
+
+    "categories": [
+
+        "games",
+
+        "entertainment"
+
+    ],
+
+    "icons": [
+
+        {
+            "src": "img/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+
+        {
+            "src": "img/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+
+    ]
+}
